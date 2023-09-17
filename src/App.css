@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.emoji {
+  margin-bottom: 50px;
+  font-size: 150px;
+}
+
+.emoji-list {
+  position: relative;
+  padding: 2px 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  background: #2a2a2a;
+}
+
+.emoji-list-item {
+  width: 80px;
+  text-align: center;
+  list-style: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  list-style-type: none;
+  transition: transform 300ms ease-in-out;
+}
